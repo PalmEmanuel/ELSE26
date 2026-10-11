@@ -1,4 +1,4 @@
-# ELES26
+# ELSE26
 
 Presentation repository for **“Treasure Hunting in Azure with KQL as Your Map”** at Experts Live Sweden 2026, on October 13, 2026.
 
