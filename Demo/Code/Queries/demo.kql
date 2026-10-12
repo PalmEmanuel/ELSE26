@@ -18,3 +18,9 @@
 // Hidden properties and api version
 
 // Shared queries
+
+// Parse scope of role assignment
+authorizationresources
+| where type =~ 'microsoft.authorization/roleassignments' and id contains 'Microsoft.Storage/storageAccounts'
+| parse properties.scope with '/subscriptions/' * 'Microsoft.Storage/storageAccounts/' resourceScope
+| project resourceScope
